@@ -1,0 +1,94 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.background{
+	width: 100%;
+	height: 100vh;
+	background-image: url(file:///C:/Users/Hp/OneDrive/Desktop/Website%20-%20Copy/background2.png);
+	background-size:  cover;
+	background-position: center;
+}
+
+.content{
+	width: 85%;
+	margin: auto;
+	padding: 35px 0;
+	display:  flex;
+	align-items: centre;
+	justify-content: space-between;
+}
+
+.logo{
+	width:  120px;
+	cursor:  pointer;
+}
+
+.content ul li{
+	list-style: none;
+	display: inline-block;
+	margin: 0 20px;
+	position: relative;
+	font-family: algerian;
+	font-style: italic;
+}
+
+.content ul li a{
+	text-decoration: none;
+	color: Black;
+	text-transform: uppercase;
+}
+
+.content ul li::after{
+	content: '';
+	height: 3px;
+	width: 0;
+	background: #009688;
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	transition: 0.5s;
+}
+
+.content ul li:hover::after{
+	width: 100%;
+}
+
+.text{
+	width: 100%;
+	position:  absolute;
+	top: 75%;
+	text-align: center;
+}
+
+.text h1{
+	font-size: 70px;
+	font-family: verdana;
+	color: #FD0E35;
+    text-decoration: underline;
+}
+
+.text span{
+	color: #44D7A8;
+}
+.text p{
+	font-weight: 100;
+	font-size: 20px;
+	color: #FF00CC;
+	font-weight: bold;
+	animation: slide-up 2s;
+}
+@keyframes slide-up{
+	from
+	{
+		opacity: 0.2;
+		line-height: 72px;
+	}
+    to
+	{
+		opacity: 1;
+		line-height: 23px;
+	}
+}
+
